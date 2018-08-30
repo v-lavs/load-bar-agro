@@ -1,0 +1,107 @@
+.preloader2 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: 1s all;
+    opacity: 1;
+    visibility: visible;
+    z-index: 9999;
+    &.done {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.loader2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    transform: translate(-50%, -50%);
+    width: 438px;
+    transition-timing-function: ease;
+}
+
+.bg-span {
+    display: inline-block;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 31px;
+    vertical-align: middle;
+    transition-timing-function: ease;
+    &-1 {
+        animation: 2s skew-scale1 ease infinite;
+        background-image: url(../img/1-m.svg);
+    }
+    &-2 {
+        animation: 2s skew-scale2 ease infinite;
+        background-image: url(../img/2-a.svg);
+    }
+    &-3 {
+        animation: 2s skew-scale3 ease infinite;
+        background-image: url(../img/3-y.svg);
+    }
+    &-4 {
+        animation: 2s skew-scale4 ease infinite;
+        background-image: url(../img/4-k.svg);
+    }
+    &-5 {
+        animation: 2s skew-scale5 ease infinite;
+        background-image: url(../img/2-a.svg);
+    }
+    &-6 {
+        animation: 2s skew-scale6 ease infinite;
+        background-image: url(../img/6-d.svg);
+    }
+    &-7 {
+        animation: 2s skew-scale7 ease infinite;
+        background-image: url(../img/7-g.svg);
+    }
+    &-8 {
+        animation: 2s skew-scale8 ease infinite;
+        background-image: url(../img/8-e.svg);
+    }
+    &-9 {
+        animation: 2s skew-scale9 ease infinite;
+        background-image: url(../img/4-k.svg);
+    }
+    &-10 {
+        animation: 2s skew-scale10 ease infinite;
+        background-image: url(../img/10-s.svg);
+    }
+    &-11 {
+        animation: 2s skew-scale11 ease infinite;
+        background-image: url(../img/11-o.svg);
+    }
+    &-12 {
+        animation: 2s skew-scale12 ease infinite;
+        background-image: url(../img/12-n.svg);
+    }
+}
+
+@for $i from 1 through 12 {
+    @keyframes skew-scale#{$i} {
+        0% {
+            transform: scaleX(0) skewY(0);
+        }
+        #{$i * 8%} {
+            transform: scaleX(0) skewY(0);
+        }
+        @if((($i +1) * 8%) < 100%) {
+            #{($i +1) * 8%} {
+                transform: scaleX(1) skewY(0);
+            }
+        }
+        100% {
+            transform: scaleX(1) skewY(0);
+        }
+    }
+}
+
+

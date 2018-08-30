@@ -2,16 +2,12 @@
 @import 'utils/mixins';
 @import 'utils/functions';
 
-@import "components/loader";
 @import 'base/reset';
 @import 'base/base';
 @import 'base/typography';
 
-@import 'layout/grid';
-@import 'layout/layout';
-@import 'layout/header';
-@import 'layout/footer';
-
-@import 'pages/home';
 @import 'pages/test';
+@import 'pages/loadbar';
+@import 'pages/loadbar2';
+@import 'pages/popup';
 
