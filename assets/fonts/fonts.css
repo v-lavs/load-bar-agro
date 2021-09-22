@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'RalewayBlack';
+    src: url('RalewayBlack.eot');
+    src: url('RalewayBlack.eot') format('embedded-opentype'),
+    url('RalewayBlack.woff2') format('woff2'),
+    url('RalewayBlack.woff') format('woff'),
+    url('RalewayBlack.ttf') format('truetype'),
+    url('RalewayBlack.svg#RalewayBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'RalewayMedium';
+    src: url('RalewayMedium.eot');
+    src: url('RalewayMedium.eot') format('embedded-opentype'),
+    url('RalewayMedium.woff2') format('woff2'),
+    url('RalewayMedium.woff') format('woff'),
+    url('RalewayMedium.ttf') format('truetype'),
+    url('RalewayMedium.svg#RalewayMedium') format('svg');
+}
